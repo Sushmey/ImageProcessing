@@ -49,7 +49,7 @@ offset = len(kernel) // 2
 output_image = Image.new("RGBA", input_image.size) #Make sure to check the input image type
 draw = ImageDraw.Draw(output_image)
 
-# Compute convolution between intensity and kernels
+# Compute convolution between image and kernels
 for x in range(offset, input_image.width - offset):
     for y in range(offset, input_image.height - offset):
         colorLayerTemp = [0, 0, 0, 0]  #Change it to len 3 if the image is of RGB or similar type
