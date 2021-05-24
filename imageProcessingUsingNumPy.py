@@ -48,4 +48,4 @@ for i in range(height):
             result[rotatedY,rotatedX,:]=image[i,j,:]                        
 
 rotatedImg=Image.fromarray((result).astype(np.uint8))
-rotatedImg
+rotatedImg.show()
