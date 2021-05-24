@@ -46,13 +46,13 @@ kernel = box_kernel
 offset = len(kernel) // 2
 
 # Create output image
-output_image = Image.new("RGBA", input_image.size)
+output_image = Image.new("RGBA", input_image.size) #Make sure to check the input image type
 draw = ImageDraw.Draw(output_image)
 
 # Compute convolution between intensity and kernels
 for x in range(offset, input_image.width - offset):
     for y in range(offset, input_image.height - offset):
-        colorLayerTemp = [0, 0, 0, 0]
+        colorLayerTemp = [0, 0, 0, 0]  #Change it to len 3 if the image is of RGB or similar type
         for a in range(len(kernel)):
             for b in range(len(kernel)):
                 xn = x + a - offset
