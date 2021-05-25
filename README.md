@@ -1,2 +1,2 @@
 # ImageProcessing
-SRA Image processing math practice assignments
+Image processing using real math 💪🏻
